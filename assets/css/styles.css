@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.move{
+    animation: moveTo 10s ease-in-out infinite;
+}
+.second{
+    animation: moveSec 10s ease-in-out infinite;
+}
+
+@keyframes moveTo {
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+}
+
+@keyframes moveSec {
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+}
+
+
